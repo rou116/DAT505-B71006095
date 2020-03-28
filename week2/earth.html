@@ -59,7 +59,7 @@ div#canvas-frame {
     function initObject() {
     	// 地球
     	var texture1  = THREE.ImageUtils.loadTexture('earth.jpg');
-        sphere1 = new THREE.Mesh(new THREE.SphereGeometry(50, 50,50),
+        sphere1 = new THREE.Mesh(new THREE.SphereGeometry(40, 50,50),
                //new THREE.MeshLambertMaterial({color:0x0ffff0})
                new THREE.MeshLambertMaterial({  map: texture1})
         );
