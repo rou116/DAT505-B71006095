@@ -1,0 +1,31 @@
+<html>
+<head>
+</head>
+<body>
+  <script type="text/javascript">
+  function CheckNumber(){
+    var pnumber = document.getElementById('pnumber').value;
+    //CHECK 11 DIGIT
+    if(pnumber.length <11){
+      document.getElementById('showtxt').innerHTML = "小于11个数字";
+    }
+    else if(pnumber.substr(0,1) != "1"){
+      document.getElementById('showtxt').innerHTML = "不是以1开头";
+    }
+    else if(isNaN(pnumber)){
+      document.getElementById('showtxt').innerHTML = "要是数字";
+    }
+
+    else {
+      document.getElementById('showtxt').innerHTML = "是的";
+    }
+  }
+  </script>
+  <form id="form1">
+    Input your PhoneNumber:<br><input type="text" id="pnumber">
+    <input type="button" value="CHECK"onclick="CheckNumber()">
+    <div id="showtxt"></div>
+</form>
+
+</body>
+</html>
